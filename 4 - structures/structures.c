@@ -37,7 +37,7 @@ void kill(struct Person * _person){
     _person->life_state = DEAD;
 }
 
-void main(void){
+int main(void){
     struct Person sc;
     
     strcpy(sc.firstname, "Sarah");
@@ -53,6 +53,8 @@ void main(void){
     kill(&sc);
 
     print_person(&sc);
+
+    return 0;
 }
 
 /*

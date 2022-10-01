@@ -2,7 +2,7 @@
 
 #define ARR_SZ  ((int)20)
 
-void main(void){
+int main(void){
     int array[ARR_SZ];
     for (int i=0; i<ARR_SZ; i++) array[i] = i;
 
@@ -15,6 +15,8 @@ void main(void){
     printf("Array content : {");
     for (int i=0; i<arr_i_sz; i++) printf("%d, ", array[i]);
     printf("}\r\n");
+
+    return 0;
 }
 
 /*

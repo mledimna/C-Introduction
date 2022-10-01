@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void main(void){
+int main(void){
     int a = 0;
     uint8_t b = 0;
     long c = 0;
@@ -13,6 +13,8 @@ void main(void){
     printf("Variable 'long c' with a size of %d bytes is located at address 0x%p, contains %d\r\n", sizeof(c), &c, c);
     printf("Variable 'double d' with a size of %d bytes is located at address 0x%p, contains %f\r\n", sizeof(d), &d, d);
     printf("Variable 'int * ptr' with a size of %d bytes is located at address 0x%p, contains 0x%p\r\n", sizeof(ptr), &ptr, ptr);
+
+    return 0;
 }
 
 /*

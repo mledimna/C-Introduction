@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-void main(void){
+int main(void){
     int my_integer = 42;
     int * int_ptr = NULL;
 
     printf("NULL ptr : 0x%p\r\n", int_ptr);
     int_ptr = &my_integer;
     printf("ptr = &my_integer : 0x%p\r\n", int_ptr);
+
+    return 0;
 }
 
 /*

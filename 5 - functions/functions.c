@@ -13,11 +13,12 @@ void parameter_function(int _param){
     printf("Parameter is %d\r\n", _param);
 }
 
-void main(void){
+int main(void){
     void_function();
     int a = int_function();
     printf("'int_function' returned %d\r\n", a);
     parameter_function(a);
+    return 0;
 }
 
 /*

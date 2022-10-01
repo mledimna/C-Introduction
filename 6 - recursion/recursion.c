@@ -9,9 +9,10 @@ int rec_func(int _param){
     else rec_func(_param + 1);
 }
 
-void main(void){
+int main(void){
     int a = rec_func(1);
     int b = broken_rec_func(1); // Will cause Stack Overflow (broken_rec_func called 86264 times)
+    return 0;
 }
 
 /*
