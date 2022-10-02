@@ -8,7 +8,6 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "${workspaceFolder}\\person\\person.c",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

@@ -2,11 +2,12 @@
     "tasks": [
       {
         "type": "shell",
-        "label": "g++.exe build active file",
+        "label": "MinGW build parent repositories",
         "command": "C:\\MinGW\\bin\\g++.exe",
         "args": [
           "-g",
           "${file}",
+          "${fileDirname}\\${all\\*.c",
           "-o",
           "${fileDirname}\\${fileBasenameNoExtension}.exe"
         ],
@@ -16,16 +17,9 @@
       },
       {
         "type": "shell",
-        "label": "g++ build & run active file",
-        "command": "C:\\MinGW\\bin\\g++.exe",
-        "args": [
-          "${file}",
-          "-o",
-          "${fileDirname}\\${fileBasenameNoExtension}.exe"
-        ],
-        "options": {
-          "cwd": "C:\\MinGW\\bin"
-        }
+        "label": "Makefile build",
+        "command": "make",
+        "args": [],
       }
     ],
     "version":"2.0.0"
