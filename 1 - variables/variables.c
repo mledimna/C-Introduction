@@ -8,11 +8,11 @@ int main(void){
     double d = 0;
     int * ptr = &a;
 
-    printf("Variable 'int a' with a size of %d bytes is located at address 0x%p, contains %d\r\n", sizeof(a), &a, a);
-    printf("Variable 'uint8_t b' with a size of %d bytes is located at address 0x%p, contains %d\r\n", sizeof(b), &b, b);
-    printf("Variable 'long c' with a size of %d bytes is located at address 0x%p, contains %d\r\n", sizeof(c), &c, c);
-    printf("Variable 'double d' with a size of %d bytes is located at address 0x%p, contains %f\r\n", sizeof(d), &d, d);
-    printf("Variable 'int * ptr' with a size of %d bytes is located at address 0x%p, contains 0x%p\r\n", sizeof(ptr), &ptr, ptr);
+    printf("Variable 'int a' with a size of %lu bytes is located at address 0x%p, contains %d\r\n", sizeof(a), &a, a);
+    printf("Variable 'uint8_t b' with a size of %lu bytes is located at address 0x%p, contains %d\r\n", sizeof(b), &b, b);
+    printf("Variable 'long c' with a size of %lu bytes is located at address 0x%p, contains %d\r\n", sizeof(c), &c, c);
+    printf("Variable 'double d' with a size of %lu bytes is located at address 0x%p, contains %f\r\n", sizeof(d), &d, d);
+    printf("Variable 'int * ptr' with a size of %lu bytes is located at address 0x%p, contains 0x%p\r\n", sizeof(ptr), &ptr, ptr);
 
     return 0;
 }
