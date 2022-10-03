@@ -2,6 +2,10 @@
 
 void void_function(void){
     printf("Do something without parameters and don't return anything\r\n");
+
+    return;
+
+    printf("After return \r\n");
 }
 
 int int_function(void){
