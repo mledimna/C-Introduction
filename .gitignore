@@ -1,6 +1,10 @@
+.vscode/
 *.exe
 *.pdb
 *.ilk
 *.obj
-Z - Tests/
 *.json
+1 - variables/variabes
+8 - FSM/fsm
+Y - Examen/
+Z - Tests/
