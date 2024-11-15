@@ -4,7 +4,7 @@
 #define VAR_TYPE uint16_t
 
 // Global variables
-char *str = "I'm a string";
+const char *str = "I'm a string";
 
 int main(void)
 {
