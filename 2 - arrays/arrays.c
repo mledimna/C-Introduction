@@ -7,7 +7,9 @@ int main(void){
     int array_2d[ARR_SZ][ARR_SZ];
 
     // Fill array
-    for (int i=0; i<ARR_SZ; i++) array[i] = i;
+    for (int i=0; i<ARR_SZ; i++) {
+        array[i] = i;
+    }
 
     // Fill array_2d
     for (int i=0; i<ARR_SZ; i++){

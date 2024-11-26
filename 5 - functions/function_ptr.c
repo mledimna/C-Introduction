@@ -5,6 +5,10 @@ void some_void_void_function(void){
     printf("In 'some_void_void_function'\r\n");
 }
 
+void my_superb_finction(void) {
+    printf("WHEEEEEEEEEEEEEEEE\r\n");
+}
+
 // Execute function if not NULLL
 void execute_void_void_function(void (*fPtr)(void)){
     printf("execute_void_void_function : ");
@@ -26,6 +30,11 @@ int main(void){
     // Call 'some_void_void_function' by 'function_ptr'
     function_ptr();
 
+    function_ptr = my_superb_finction;
+
+    function_ptr();
+
+
     // Try to execute 'some_void_void_function'
     execute_void_void_function(function_ptr);
     
@@ -35,6 +44,15 @@ int main(void){
 
     // Execute 'some_void_void_function'
     some_void_void_function();
+
+    
+    /*
+    &(some_void_void_function())
+
+    is equivalent to
+
+    some_void_void_function
+    */
 
     return 0;
 }

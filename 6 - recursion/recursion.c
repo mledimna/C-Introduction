@@ -5,13 +5,17 @@ int broken_rec_func(int _param){
 }
 
 int rec_func(int _param){
-    if (_param >= 20) return _param;
-    else rec_func(_param + 1);
+    if (_param >= 20) {
+        return _param;
+    }
+    else {
+        return rec_func(_param + 1);
+    }
 }
 
 int main(void){
-    int a = rec_func(21);
-    //int b = broken_rec_func(1); // Will cause Stack Overflow (broken_rec_func called 86264 times)
+    //int a = rec_func(10);
+    int b = broken_rec_func(1); // Will cause Stack Overflow (broken_rec_func called 86264 times)
     return 0;
 }
 
